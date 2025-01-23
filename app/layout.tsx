@@ -3,17 +3,25 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'The Hampster Dance',
-  description: 'Recreation of the original Hampster Dance from 1998 by Deidre LaCarte',
+  description: 'Replica of the original Hampster Dance from 1998 by Deidre LaCarte',
   authors: [{ name: 'Original by Deidre LaCarte' }],
   keywords: ['hampster dance', 'hamster dance', 'internet history', 'web nostalgia', '90s web', 'whistle stop'],
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://hampster-dance.vercel.app'),
   icons: {
-    icon: '/favicon.ico',
+    icon: './favicon.ico',
   },
   openGraph: {
     title: 'The Hampster Dance',
     description: 'Recreation of the original Hampster Dance from 1998',
     type: 'website',
+    images: [
+      {
+        url: './og-image.jpg', 
+        width: 1200,
+        height: 630,
+        alt: 'The Hampster Dance',
+      },
+    ],
   },
 }
 
