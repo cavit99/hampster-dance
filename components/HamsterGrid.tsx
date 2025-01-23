@@ -30,9 +30,9 @@ const HamsterGrid: FC = () => {
   };
 
   return (
-    <div style={{ width: '100%', padding: '0.5rem 1rem 1rem' }}>
+    <div className="grid-container">
       {Array.from({ length: totalRows }).map((_, rowIndex) => (
-        <div key={rowIndex} style={{ width: '100%', marginBottom: '0.25rem' }}>
+        <div key={rowIndex} style={{ marginBottom: '0.25rem' }}>
           {/* Mobile Grid */}
           <div className="hamster-row sm-hidden">
             {Array.from({ length: 6 }).map((_, colIndex) => (

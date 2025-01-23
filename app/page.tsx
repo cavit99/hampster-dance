@@ -37,7 +37,7 @@ function AudioControls() {
 
   return (
     <div className="center-content">
-      <div style={{ width: '100%', padding: '0 1rem' }}>
+      <div>
         <h1 className="site-header">
           THE HAMPSTER DANCE
         </h1>
@@ -57,7 +57,7 @@ function AudioControls() {
       <HamsterGrid />
       <VisitorCounter />
       
-      <div style={{ width: '100%', padding: '0 1rem' }}>
+      <div>
         <p className="site-copyright">© 1997</p>
         <div style={{ marginTop: '1rem', textAlign: 'center' }}>
           <button 
@@ -75,7 +75,7 @@ function AudioControls() {
 export default function Home() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: 'white' }}>
-      <main style={{ padding: '2rem 1rem' }}>
+      <main style={{ padding: '2rem 0' }}>
         <AudioControls />
       </main>
     </div>
